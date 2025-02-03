@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Motivation</h2>
+
+          <!-- Message de l'utilisateur -->
+          <div class="d-flex justify-content-end mb-3">
+            <div class="p-3 bg-primary text-white rounded-pill shadow">
+              <strong>You:</strong> <%= @user_question %>
+            </div>
+          </div>
+
+          <!-- Réponse du coach -->
+          <div class="d-flex justify-content-start">
+            <div class="p-3 bg-light border rounded-pill shadow">
+              <strong>Coach:</strong> <%= @answer %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= link_to "Back", ask_path, class: "btn btn-primary" %>
+</div>
